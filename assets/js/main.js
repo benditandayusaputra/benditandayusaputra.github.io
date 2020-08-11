@@ -1,31 +1,31 @@
 $(function () {
 
     // Youtube API
-    // $.ajax({
-    //     type: "GET",
-    //     url: "https://www.googleapis.com/youtube/v3/channels?part=snippet&part=statistics&id=UCXNOAPeyHZROXX8dCIn-1KQ&key=AIzaSyBTTqTBH3J1dO7Fy_kdU_cYgrM90a04w3E",
-    //     dataType: "JSON",
-    //     error: function (message) {
-    //         console.log(message)
-    //     },
-    //     success: function (response) {
-    //         $('#yt-profile-pict').attr('src', response.items[0].snippet.thumbnails.medium.url)
-    //         $('#yt-username').html(response.items[0].snippet.title)
-    //         $('#yt-subscribers').html(`${response.items[0].statistics.subscriberCount} Subscriber.`)
-    //     }
-    // })
+    $.ajax({
+        type: "GET",
+        url: "https://www.googleapis.com/youtube/v3/channels?part=snippet&part=statistics&id=UCXNOAPeyHZROXX8dCIn-1KQ&key=AIzaSyBTTqTBH3J1dO7Fy_kdU_cYgrM90a04w3E",
+        dataType: "JSON",
+        error: function (message) {
+            console.log(message)
+        },
+        success: function (response) {
+            $('#yt-profile-pict').attr('src', response.items[0].snippet.thumbnails.medium.url)
+            $('#yt-username').html(response.items[0].snippet.title)
+            $('#yt-subscribers').html(`${response.items[0].statistics.subscriberCount} Subscriber.`)
+        }
+    })
 
-    // $.ajax({
-    //     type: "GET",
-    //     url: "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCXNOAPeyHZROXX8dCIn-1KQ&maxResults=1&key=AIzaSyBTTqTBH3J1dO7Fy_kdU_cYgrM90a04w3E&order=date",
-    //     dataType: "JSON",
-    //     error: function (message) {
-    //         console.log(message)
-    //     },
-    //     success: function (response) {
-    //         $('#yt-last-video').attr('src', `https://www.youtube.com/embed/${response.items[0].id.videoId}?rel=0`)
-    //     }
-    // })
+    $.ajax({
+        type: "GET",
+        url: "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCXNOAPeyHZROXX8dCIn-1KQ&maxResults=1&key=AIzaSyBTTqTBH3J1dO7Fy_kdU_cYgrM90a04w3E&order=date",
+        dataType: "JSON",
+        error: function (message) {
+            console.log(message)
+        },
+        success: function (response) {
+            $('#yt-last-video').attr('src', `https://www.youtube.com/embed/${response.items[0].id.videoId}?rel=0`)
+        }
+    })
 
     // Instagram API
     // $.ajax({
