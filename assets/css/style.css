@@ -1,0 +1,197 @@
+/* Impirt Font */
+@font-face {
+    src: url(../fonts/roboto/Roboto-Regular.ttf);
+    font-family: 'Roboto-Reguler';
+}
+
+@font-face {
+    src: url(../fonts/roboto/Roboto-Bold.ttf);
+    font-family: 'Roboto-Bold';
+}
+
+.title {
+    font-family: 'Roboto-Bold';
+    text-transform: uppercase;
+}
+
+.social-title {
+    font-family: 'Roboto-Bold';
+}
+
+nav {
+    background: transparent;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999 !important;
+}
+
+nav .navbar-nav a {
+    color: black !important;
+    margin-right: 20px !important;
+    font-family: 'Roboto-Bold';
+}
+
+nav .navbar-nav a:hover {
+    color: blueviolet !important;
+}
+
+svg {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: 0;
+}
+
+.container-fluid {
+    background-image: url(../img/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.jumbotron {
+    background: transparent !important;
+}
+
+.jumbotron .type-1 {
+    text-transform: uppercase;
+    margin-top: 130px;
+    font-family: 'Roboto-Bold';
+}
+
+.jumbotron p {
+    padding-right: 40px !important;
+    font-family: 'Roboto-Bold';
+}
+
+.jumbotron #btns-intro {
+    opacity: 0;
+}
+
+.btn {
+    border: none !important;
+    background: linear-gradient(to right, #9212FC, #B10AFA);
+}
+
+#about {
+    background-image: url(../img/bg-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+#about p {
+    text-indent: 20px;
+    text-align: justify;
+}
+
+.ig-thumbnail {
+    width: 140px;
+    height: 150px;
+    float: left;
+    overflow: hidden;
+}
+
+.ig-thumbnail img {
+    width: 140px;
+}
+
+#portfolio #thumbnail a img {
+    box-shadow: 0px 0px 2px white,
+        0px 0px 4px white,
+        0px 0px 8px white,
+        0px 0px 12px black,
+        0px 0px 16px black;
+    transition: 1s;
+}
+
+#portfolio #thumbnail a img:hover {
+    box-shadow: none;
+    filter: grayscale(100%) !important;
+}
+
+#services .service-item {
+    transition: 1s;
+}
+
+#services .service-item:hover {
+    box-shadow: 0px 0px 2px white,
+        0px 0px 4px white,
+        0px 0px 8px white,
+        0px 0px 12px black,
+        0px 0px 16px black;
+}
+
+#contact .card {
+    background-image: url(../img/bg/bg-contact.jpg) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer .social {
+    text-decoration: none !important;
+    color: #343434;
+    opacity: .6;
+    transition: .5s;
+}
+
+footer .social:hover {
+    color: #9212FC !important;
+    opacity: 1;
+}
+
+footer small {
+    font-family: 'Roboto-Bold';
+}
+
+@media (max-width: 576px) {
+
+    .title {
+        font-size: x-large;
+    }
+
+    nav {
+        background-color: white !important;
+    }
+
+    .container-fluid {
+        background: none;
+    }
+
+    .jumbotron {
+        height: 400px !important;
+    }
+
+    .jumbotron .row .col-12 {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        text-align: center;
+    }
+
+    .jumbotron .type-1 {
+        margin-top: 50px;
+        font-size: larger;
+    }
+
+    .jumbotron .type-2 {
+        font-size: x-large;
+    }
+
+    .jumbotron #intro-text {
+        padding-right: 0 !important;
+    }
+
+    #about {
+        background: none;
+    }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
