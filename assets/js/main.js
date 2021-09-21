@@ -42,7 +42,7 @@ $(function () {
 
     setTimeout(() => {
         $('#btns-intro').css('opacity', 1)
-    }, 15500)
+    }, 10500)
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > 150) {
@@ -90,7 +90,7 @@ $(function () {
     })
 
     let typed2 = new Typed(".type-2", {
-        strings: ["I'm Web Developer, Grapich Designer & YouTuber"],
+        strings: ["I'm a Web Developer"],
         typeSpeed: 50,
         startDelay: 4000,
         showCursor: false,
@@ -98,9 +98,9 @@ $(function () {
     })
 
     let typed3 = new Typed("#intro-text", {
-        strings: ["I'am still in school SMK N 1 Bawang, now i'm in grade 12 and my competency is software engineering."],
+        strings: ["I'm a fresh graduate developer"],
         typeSpeed: 50,
-        startDelay: 7500,
+        startDelay: 6500,
         showCursor: false,
         loop: false
     })
